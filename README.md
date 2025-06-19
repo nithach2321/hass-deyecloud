@@ -32,7 +32,26 @@ A custom integration to connect your Home Assistant with your Deye solar inverte
 4. Go to **Settings → Devices & Services → Add Integration → DeyeCloud**
 5. Fill in your credentials and API details
 
-### Option 2: Via HACS
+### Option 2: Via HACS### Option 2: Via HACS
+## 📦 Thêm Custom Repository vào HACS
+
+Nếu bạn chưa từng thêm repository tùy chỉnh trong HACS, hãy làm theo hướng dẫn sau:
+
+1. Truy cập **HACS → Integrations**
+2. Nhấn vào nút menu ba chấm (⋮) góc trên bên phải → **Custom repositories**
+3. Ở phần *Add custom repository*, nhập đường link sau:
+
+   ```
+   https://github.com/heavenknows1978/hass-deyecloud
+   ```
+
+4. Ở ô loại repository (**Category**), chọn: `Integration`
+5. Nhấn **Add**. Repository sẽ được thêm vào HACS.
+6. Quay lại HACS → Integrations → nhấn **Explore & Add Repositories**
+7. Tìm kiếm `DeyeCloud` → nhấn **Install**
+8. Khởi động lại Home Assistant
+9. Vào **Settings → Devices & Services → Add Integration → DeyeCloud** để cấu hình
+
 
 1. Go to HACS → Integrations → 3-dot menu → Custom repositories
 2. Add: `https://github.com/heavenknows1978/hass-deyecloud` (as Integration)
