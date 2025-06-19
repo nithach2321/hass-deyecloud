@@ -1,3 +1,12 @@
+
+## 👤 Tác giả & Thông tin liên hệ
+
+- **Tên**: Trần Công Tuấn Anh  
+- **GitHub**: [@heavenknows1978](https://github.com/heavenknows1978)  
+- **Email**: hk@homeviet.org
+- **Dự án**: [hass-deyecloud](https://github.com/heavenknows1978/hass-deyecloud)  
+- **License**: MIT
+
 # 🌞 DeyeCloud Home Assistant Integration
 
 A custom integration to connect your Home Assistant with your Deye solar inverter via the official Deye Cloud API.
