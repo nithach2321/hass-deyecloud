@@ -2,10 +2,11 @@
   "domain": "deyecloud",
   "name": "Deye Cloud",
   "version": "1.0.0",
-  "author": "Tran Cong Tuan Anh (hk@homeviet.org)",
-  "documentation": "https://eu1-developer.deyecloud.com/v2/api-docs",
+  "documentation": "https://github.com/heavenknows1978/hass-deyecloud",
   "dependencies": [],
+  "codeowners": ["@heavenknows1978"],
   "config_flow": true,
-  "codeowners": ["hk@homeviet.org"],
-  "requirements": ["requests", "aiofiles"] 
+  "requirements": ["aiofiles"],
+  "iot_class": "cloud_polling",
+  "homeassistant": "2022.5.0"
 }
