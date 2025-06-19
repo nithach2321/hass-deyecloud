@@ -1,8 +1,11 @@
 {
   "name": "DeyeCloud Integration",
   "domain": "deyecloud",
-  "homeassistant": "2022.5.0"
+  "version": "1.0.1",
+  "homeassistant": "2022.5.0",
   "codeowners": ["@heavenknows1978"],
   "documentation": "https://github.com/heavenknows1978/hass-deyecloud",
-  "issue_tracker": "https://github.com/heavenknows1978/hass-deyecloud/issues"
+  "issue_tracker": "https://github.com/heavenknows1978/hass-deyecloud/issues",
+  "config_flow": true,
+  "requirements": []
 }
