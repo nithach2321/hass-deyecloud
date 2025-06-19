@@ -3,7 +3,7 @@
 
 - **Tên**: Trần Công Tuấn Anh  
 - **GitHub**: [@heavenknows1978](https://github.com/heavenknows1978)  
-- **Email**: heavenknows1978@gmail.com  
+- **Email**: hk@homeviet.org
 - **Dự án**: [hass-deyecloud](https://github.com/heavenknows1978/hass-deyecloud)  
 - **License**: MIT
 
