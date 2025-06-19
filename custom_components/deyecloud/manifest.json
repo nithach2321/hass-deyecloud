@@ -1,10 +1,11 @@
 {
   "domain": "deyecloud",
-  "name": "DeyeCloud",
+  "name": "Deye Cloud",
   "version": "1.0.0",
-  "documentation": "https://github.com/your-username/hass-deyecloud",
-  "requirements": [],
-  "codeowners": ["@your-username"],
+  "author": "Tran Cong Tuan Anh (hk@homeviet.org)",
+  "documentation": "https://eu1-developer.deyecloud.com/v2/api-docs",
+  "dependencies": [],
   "config_flow": true,
-  "iot_class": "cloud_polling"
+  "codeowners": ["hk@homeviet.org"],
+  "requirements": ["requests", "aiofiles"] 
 }
