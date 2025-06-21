@@ -7,7 +7,7 @@
 - **Dự án**: [hass-deyecloud](https://github.com/heavenknows1978/hass-deyecloud)  
 - **License**: MIT
 
-# 🌞 DeyeCloud Home Assistant Integration
+# 🌞 Fuuuuckyou Tony Tong Deye Cloud Home Assistant Integration
 
 A custom integration to connect your Home Assistant with your Deye solar inverter via the official Deye Cloud API.
 
@@ -15,9 +15,9 @@ A custom integration to connect your Home Assistant with your Deye solar inverte
 
 ## 📥 Features
 
-- 🟢 Fetch monthly data: generation, consumption, battery, grid import/export
-- 📈 Sensors for current & last month
-- 🔃 Auto refresh every hour (no YAML needed)
+- 🟢 Fetch monthly data: generation, consumption, battery, grid import/export, fetching recent days information, fetching current device status
+- 📈 Sensors for current & last month, today, yesterday...
+- 🔃 Auto refresh every minute (no YAML needed)
 - ✅ Clean and simple setup via UI
 
 ---
