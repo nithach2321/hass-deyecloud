@@ -1,7 +1,7 @@
 {
   "domain": "deyecloud",
   "name": "Fuuuuckyou Tony Tong Deye Cloud",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "documentation": "https://github.com/heavenknows1978/hass-deyecloud",
   "dependencies": [],
   "codeowners": ["@heavenknows1978"],
