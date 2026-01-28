@@ -385,6 +385,30 @@ class DeyeCloudSensor(CoordinatorEntity, SensorEntity):
         return None
 
     @property
+    def device_info(self):
+        "Sensor Group"
+        
+        # Inverrter Sensor
+        if self._device_sn:
+            return {
+                "identifiers": {(DOMAIN, self._device_sn)},
+                "name": f"Deye Inverter {self._device_sn}",
+                "manufacturer": "Deye",
+                "model": "Inverter",
+            }
+        
+        # Station Sensor
+        if self._station_id:
+            return {
+                "identifiers": {(DOMAIN, f"station_{self._station_id}")},
+                "name": f"Deye Station {self._station_id}",
+                "manufacturer": "Deye",
+                "model": "Station",
+            }
+        
+        return None
+    
+    @property
     def extra_state_attributes(self):
         """Return additional state attributes."""
         attrs = self._extra_attributes.copy()
