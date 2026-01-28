@@ -17,3 +17,23 @@ async def async_get_token(session: aiohttp.ClientSession, username, password, ap
         if not j.get("success"):
             raise Exception(f"Token request failed: {j.get('msg')}")
         return j["accessToken"]
+
+async def async_control_solar_sell(session: aiohttp.ClientSession, token, base_url, device_sn, is_enable):
+    """Send Solar Sell control command."""
+    url = f"{base_url}/order/sys/solarSell/control"
+    
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Content-Type": "application/json"
+    }
+    
+    action = "on" if is_enable else "off"
+    
+    payload = {
+        "action": action,
+        "deviceSn": device_sn
+    }
+    
+    async with session.post(url, json=payload, headers=headers, timeout=10) as resp:
+        resp.raise_for_status()
+        return await resp.json()
