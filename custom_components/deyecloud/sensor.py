@@ -572,14 +572,40 @@ async def async_setup_entry(
                 name = f"{key} {device_sn}"
                 uid = f"device_{device_sn}_{key}"
 
+                # Check unit
+                unit = data_item.get("unit", "")
+                unit_device_class = None
+                unit_state_class = None
+                if unit == "kWh":
+                    unit_device_class = "energy"
+                    unit_state_class = "total"
+                elif unit == "W":
+                    unit_device_class = "power"
+                    unit_state_class = "measurement"
+                elif unit == "V":
+                    unit_device_class = "voltage"
+                    unit_state_class = "measurement"
+                elif unit == "A":
+                    unit_device_class = "current"
+                    unit_state_class = "measurement"
+                elif unit == "%":
+                    unit_device_class = "battery"
+                    unit_state_class = "measurement"
+                elif unit in ["C", "°C"]:
+                    unit_device_class = "temperature"
+                    unit_state_class = "measurement"
+                elif unit == "Hz":
+                    unit_device_class = "frequency"
+                    unit_state_class = "measurement"
+
                 entities.append(DeyeCloudSensor(
                     coordinator=coordinator,
                     sensor_type="device",
                     name=name,
                     unique_id=uid,
                     unit=data_item.get("unit", ""),
-                    device_class=None,
-                    state_class=None,
+                    device_class=unit_device_class,
+                    state_class=unit_state_class,
                     station_id=station_id,
                     device_sn=device_sn,
                     device_key=key,
