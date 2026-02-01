@@ -578,7 +578,7 @@ async def async_setup_entry(
                 unit_state_class = None
                 if unit == "kWh":
                     unit_device_class = "energy"
-                    unit_state_class = "total"
+                    unit_state_class = "total_increasing"
                 elif unit == "W":
                     unit_device_class = "power"
                     unit_state_class = "measurement"
